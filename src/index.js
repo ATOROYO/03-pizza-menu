@@ -70,7 +70,7 @@ function Header() {
 
 function Menu() {
   return (
-    <div>
+    <div className="menu">
       <h2>Our Menu</h2>
       <Pizza />
       <Pizza />
