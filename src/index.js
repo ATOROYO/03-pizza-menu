@@ -73,8 +73,17 @@ function Menu() {
     <main className="menu">
       <h2>Our Menu</h2>
       <Pizza />
-      <Pizza />
     </main>
+  );
+}
+
+function Pizza() {
+  return (
+    <div>
+      <img src="pizzas/spinaci.jpg" alt="Pizza Spinaci" />
+      <h3>Pizza Spinaci</h3>
+      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
+    </div>
   );
 }
 
@@ -97,16 +106,6 @@ function Footer() {
   );
 
   // return React.createElement("footer", null, "We're currently opened!");
-}
-
-function Pizza() {
-  return (
-    <div>
-      <img src="pizzas/spinaci.jpg" alt="Pizza Spinaci" />
-      <h3>Pizza Spinaci</h3>
-      <p>Tomato, mozarella, spinach, and ricotta cheese</p>
-    </div>
-  );
 }
 
 // React V18
