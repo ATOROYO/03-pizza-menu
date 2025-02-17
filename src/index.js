@@ -76,6 +76,9 @@ function Footer() {
   const openHour = 12;
   const closeHours = 22;
 
+  if (hour >= openHour && hour <= closeHours) alert("We're curently open!");
+  else alert("Sorry we're closed");
+
   return (
     <footer>{new Date().toLocaleTimeString()}.We're currently open</footer>
   );
