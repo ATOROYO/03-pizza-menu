@@ -91,11 +91,13 @@ function Menu() {
 function Pizza(props) {
   console.log(props);
   return (
-    <div>
+    <div className="pizza">
       <img src={props.photoName} alt={props.name} />
-      <h3>{props.name}</h3>
-      <p>{props.ingredients}</p>
-      <p>{props.price + 3}</p>
+      <div>
+        <h3>{props.name}</h3>
+        <p>{props.ingredients}</p>
+        <p>{props.price + 3}</p>
+      </div>
     </div>
   );
 }
