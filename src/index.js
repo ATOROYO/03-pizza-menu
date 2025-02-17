@@ -76,7 +76,13 @@ function Menu() {
         name="Pizza Spinaci"
         ingredients="Tomato, mozarella, spinach, and ricotta cheese"
         photoName="pizzas/spinaci.jpg"
-        price="10"
+        price={10}
+      />
+      <Pizza
+        name="Pizza Funghi"
+        ingredients="Tomato, Mushrooms"
+        price={12}
+        photoName="pizzas/funghi.jpg"
       />
     </main>
   );
@@ -89,6 +95,7 @@ function Pizza(props) {
       <img src={props.photoName} alt={props.name} />
       <h3>{props.name}</h3>
       <p>{props.ingredients}</p>
+      <p>{props.price + 3}</p>
     </div>
   );
 }
