@@ -127,7 +127,8 @@ function Footer() {
       {isOpen && (
         <div className="order">
           <p>
-            We're open until {closeHours}:00. Come visit us or order online.
+            We're open until {closeHours}:00. hours Come visit us or order
+            online.
           </p>
           <button className="btn">Order</button>
         </div>
