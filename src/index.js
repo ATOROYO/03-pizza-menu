@@ -125,7 +125,7 @@ function Footer() {
   return (
     <footer className="footer">
       {isOpen && (
-        <div>
+        <div className="order">
           <p>We're open until {closeHours}:00. Come visit us or order online</p>
           <button>Order</button>
         </div>
