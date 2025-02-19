@@ -81,12 +81,12 @@ function Menu() {
         photoName="pizzas/spinaci.jpg"
         price={10}
       />
-      <Pizza
+      {/* <Pizza
         name="Pizza Funghi"
         ingredients="Tomato, Mushrooms"
         price={12}
         photoName="pizzas/funghi.jpg"
-      />
+      /> */}
     </main>
   );
 }
