@@ -122,11 +122,7 @@ function Footer() {
   // if (hour >= openHour && hour <= closeHours) alert("We're curently open!");
   // else alert("Sorry we're closed");
 
-  return (
-    <footer className="footer">
-      {new Date().toLocaleTimeString()}.We're currently open
-    </footer>
-  );
+  return <footer className="footer">{isOpen && <p>open</p>}</footer>;
 
   // return React.createElement("footer", null, "We're currently opened!");
 }
