@@ -111,7 +111,7 @@ function Pizza(props) {
 }
 
 function Footer() {
-  const hour = new Date().getHours;
+  const hour = new Date().getHours();
   console.log(hour);
 
   const openHour = 12;
