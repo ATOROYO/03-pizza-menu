@@ -120,7 +120,7 @@ function Footer() {
   console.log(isOpen);
 
   // if (hour >= openHour && hour <= closeHours) alert("We're curently open!");
-  // else alert("Sorry we're closed");
+  // else alert("Sorry we're closed now");
 
   return (
     <footer className="footer">
