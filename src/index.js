@@ -124,7 +124,9 @@ function Footer() {
 
   return (
     <footer className="footer">
-      {isOpen ? : (
+      {isOpen ? (
+        <Order />
+      ) : (
         <p>
           We're happy to welcome you people between {openHour}:00. and
           {closeHours}:00.
@@ -140,12 +142,11 @@ function Order() {
   return (
     <div className="order">
       <p>
-        We're open until {closeHours}:00. hours Come visit us or order
-        online.
+        We're open until {closeHours}:00. hours Come visit us or order online.
       </p>
       <button className="btn">Order</button>
     </div>
-  ) 
+  );
 }
 
 // React V18
