@@ -138,11 +138,12 @@ function Footer() {
   // return React.createElement("footer", null, "We're currently opened!");
 }
 
-function Order() {
+function Order(props) {
   return (
     <div className="order">
       <p>
-        We're open until {closeHours}:00. hours Come visit us or order online.
+        We're open until {props.closeHours}:00. hours Come visit us or order
+        online.
       </p>
       <button className="btn">Order</button>
     </div>
