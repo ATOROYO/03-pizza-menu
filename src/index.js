@@ -144,6 +144,8 @@ function Footer() {
   // return React.createElement("footer", null, "We're currently opened!");
 }
 
+function Order() {}
+
 // React V18
 const root = reactDom.createRoot(document.getElementById("root"));
 root.render(
