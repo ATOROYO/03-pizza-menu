@@ -97,7 +97,7 @@ function Menu() {
 }
 
 function Pizza({ pizzaObj }) {
-  console.log(props);
+  console.log(pizzaObj);
   return (
     <li className="pizza">
       <img src={pizzaObj.photoName} alt={pizzaObj.name} />
