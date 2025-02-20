@@ -118,7 +118,7 @@ function Menu() {
 function Pizza({ pizzaObj }) {
   console.log(pizzaObj);
 
-  if (pizzaObj.soldOut) return null;
+  // if (pizzaObj.soldOut) return null;
 
   return (
     <li className="pizza">
