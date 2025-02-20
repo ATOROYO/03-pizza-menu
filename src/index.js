@@ -114,9 +114,9 @@ function Footer() {
   const hour = new Date().getHours();
   console.log(hour);
 
-  const openHour = 20;
+  const openHours = 20;
   const closeHours = 22;
-  const isOpen = hour >= openHour && hour <= closeHours;
+  const isOpen = hour >= openHours && hour <= closeHours;
   console.log(isOpen);
 
   // if (hour >= openHour && hour <= closeHours) alert("We're curently open!");
@@ -128,7 +128,7 @@ function Footer() {
         <Order />
       ) : (
         <p>
-          We're happy to welcome you people between {openHour}:00. and
+          We're happy to welcome you people between {openHours}:00. and
           {closeHours}:00.
         </p>
       )}
@@ -138,12 +138,12 @@ function Footer() {
   // return React.createElement("footer", null, "We're currently opened!");
 }
 
-function Order(props) {
+function Order({ closeHours, openHours }) {
   return (
     <div className="order">
       <p>
-        We're open until {props.closeHours}:00. hours Come visit us or order
-        online.
+        We're open from {openHours} until {closeHours}:00. hours Come visit us
+        or order online.
       </p>
       <button className="btn">Order</button>
     </div>
